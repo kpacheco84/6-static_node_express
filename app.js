@@ -55,32 +55,29 @@ app.use('/project', projectRoutes);
 
 // handle error not working
 
+app.use(function(req, res, next)  {
 
-app.use((req, res, next) => {
+    const error = new Error("Page is Not Found");
 
-    const err = new Error(`Page not found!`);
+    error.status = 404;
 
-    err.status = 404;
+    console.error(`An error occured on route ${req.originalUrl} with message: ${error.message} and status: ${error.status}`);
 
-    console.error(err.message);
-
-    return next(err);
+    next(error);
 
 });
 
 
 
-app.use((err, req, res, next) => {
+// Tell our application we want to display an error page if an error occurs
 
-    res.locals.error = err;
+app.use((error, req, res, next) => {
 
-    res.status(err.status);
+    res.locals.error = error;
 
-    res.render('error', {
+    res.status(error.status || 500);
 
-        err: err
-
-    });
+    res.render('error');
 
 });
 
