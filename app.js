@@ -39,7 +39,7 @@ app.set('view engine', 'pug');
 // setup routes
 const mainRoutes = require('./routes');
 
-const projectRoutes = require('./routes/project');
+const projectRoutes = require('./routes/projects');
 
 
 
@@ -53,7 +53,8 @@ app.use(mainRoutes);
 
 app.use('/project', projectRoutes);
 
-// handle error
+// handle error not working
+
 
 app.use((req, res, next) => {
 
