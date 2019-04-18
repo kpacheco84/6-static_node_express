@@ -8,8 +8,11 @@
 "technologies":["HTML", "CSS", "JavaScript"],
 "live_link":"not known",
 "github_link":"not known",
-"image_urls":"1_RandomQuoteMain.jpg"
-    },
+"image_urls":{
+    "thumbnail":"/static/images/1_RandomQuoteMain.jpg",
+    "others":""
+    }
+        },
     {
 "id":1,
 "project_name": "List Pagination and Filtering",
@@ -17,8 +20,11 @@
  "technologies":["HTML", "CSS", "JavaScript"],
  "live_link":"not known",
 "github_link":"not known",
- "image_urls":"2_ListPagandFilteringMain.jpg"
-            }
+"image_urls":{
+    "thumbnail":"/static/images/2_ListPagandFilteringMain.jpg",
+    "others":""
+    }     
+}
 
     ]
 
