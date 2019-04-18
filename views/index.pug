@@ -17,7 +17,7 @@ block content
         | will make me a valuable asset at my current employment and any future endeavors.Having worked on the business side of processes, then back - end development and now 
         | the skills as a developer allows me to wear many hats including that of a Business Analyst as I understand the needs 
         | of end user and I can develop internal and external applications to meet the business requirements more concisely.
-
+        
   article.grid-container.portfolio-index
 
     
@@ -28,7 +28,7 @@ block content
         each project in projects
           .cell
              a(href=`http://localhost:3000/project/${project.id}`)
-              img.thumbnail(src= `${project.image_urls}`)
+              img.thumbnail(src= `${project.image_urls[0]}`)
               h5 #{project.project_name}
 
 

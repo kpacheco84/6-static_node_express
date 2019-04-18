@@ -8,10 +8,8 @@
 "technologies":["HTML", "CSS", "JavaScript"],
 "live_link":"not known",
 "github_link":"not known",
-"image_urls":{
-    "thumbnail":"/static/images/1_RandomQuoteMain.jpg",
-    "others":""
-    }
+"image_urls":["/static/images/1_RandomQuoteMain.jpg"]
+    
         },
     {
 "id":1,
@@ -20,10 +18,9 @@
  "technologies":["HTML", "CSS", "JavaScript"],
  "live_link":"not known",
 "github_link":"not known",
-"image_urls":{
-    "thumbnail":"/static/images/2_ListPagandFilteringMain.jpg",
-    "others":""
-    }     
+"image_urls":["/static/images/2_ListPagandFilteringMain.jpg"]
+ 
+       
 }
 
     ]
