@@ -21,7 +21,33 @@
 "image_urls":["/static/images/2_ListPagandFilteringMain.jpg"]
  
        
-}
+},
+{"id":2,
+    "project_name": "Interactive Form",
+    "description":"Create a Form where a person can register for sessions at a conference and order a shirt all while making the Form elements very interactive and handle errors i a user friendly way",
+     "technologies":["HTML", "CSS", "jquery"],
+     "live_link":"not known",
+    "github_link":"not known",
+    "image_urls":["/static/images/3_InteractiveFormMain.jpg"]
+     },
+     {
+     "id":3,
+     "project_name": "OOP Game",
+     "description":"Develop a Game using OOP, keep track of score and end game with an appropriate screen",
+      "technologies":["HTML", "CSS", "jQuery","OOP"],
+      "live_link":"not known",
+     "github_link":"not known",
+     "image_urls":["/static/images/4_OOPGameMain.jpg"]
+     },
+
+     {"id":4,
+        "project_name": "Public API Request",
+        "description":"Request via FETCH API a json list of Random Employees with the requested filtering and display their information. Allow the user to click on an employees card and open a Module Window with further employee detail.",
+         "technologies":["HTML", "CSS", "jQuery", "FetchAPI"],
+         "live_link":"not known",
+        "github_link":"not known",
+        "image_urls":["/static/images/5_PublicAPIRequestMain.jpg"]
+         }
 
     ]
 

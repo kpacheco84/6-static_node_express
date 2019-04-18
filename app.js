@@ -41,7 +41,7 @@ app.get ('/about', (req, res) => {
 
 
 
-app.get('/projects', (req, res) => {
+app.get('/project', (req, res) => {
 
      res.render('project', {projects});
 
@@ -49,7 +49,7 @@ app.get('/projects', (req, res) => {
 
 
 
-app.get ('/projects/:id', (req, res) => {
+app.get ('/project/:id', (req, res) => {
 
     const {id} = req.params;
 

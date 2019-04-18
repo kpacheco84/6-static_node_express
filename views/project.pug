@@ -18,7 +18,7 @@ block content
 
         //- Use interploation to dynamically add the project title.
 
-        h1 #{project.title}
+        h1 #{project.project_name}
 
 
 
@@ -56,6 +56,6 @@ block content
 
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see. 
 
-    each img in project.images.others
+    each img in project.images
 
       img.image(src=`${img}`)
