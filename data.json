@@ -2,7 +2,7 @@
 
     "projects": [ 
     {
-"id":"0",
+"id":0,
 "project_name": "Random Qoute Generator",
 "description":"Have the screen loop through random qoutes array by clicking submit or after 5 seconds using a timeout funnction",
 "technologies":["HTML", "CSS", "JavaScript"],
@@ -11,7 +11,7 @@
 "image_urls":"1_RandomQuoteMain.jpg"
     },
     {
-"id":"1",
+"id":1,
 "project_name": "List Pagination and Filtering",
 "description":"Dynamically list 10 students per page dependent on length of student list and filter according to name search",
  "technologies":["HTML", "CSS", "JavaScript"],

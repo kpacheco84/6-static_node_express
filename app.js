@@ -1,83 +1,65 @@
 
+// require data.json
+
 const express = require('express');
 
-const bodyParser = require('body-parser');
-
-const cookieParser = require('cookie-parser');
-
-
-
-const { projects } = require("./data.json");
-
-
+const data = require('./data.json');
 
 const app = express();
 
+const projects = data.projects;
 
-
-// Init Parsing of Req Body & Cookies
-
-app.use(bodyParser.urlencoded({
-
-    extended: false
-
-}));
-
-app.use(cookieParser());
+var port = process.env.PORT || 3000;
 
 
 
-app.use('/static', express.static('public'))
 
 
+app.use('/static', express.static('public'));
 
-// Setup view engine to Pug
+
 
 app.set('view engine', 'pug');
 
 
-// setup routes
-const mainRoutes = require('./routes');
 
-const projectRoutes = require('./routes/projects');
+app.get ('/', (req, res) => {
 
+    
 
-
-app.use("/", require("./routes/index"));
-
-app.use("/about", require("./routes/about"));
-
-
-
-app.use(mainRoutes);
-
-app.use('/project', projectRoutes);
-
-// handle error not working
-
-app.use(function(req, res, next)  {
-
-    const error = new Error("Page is Not Found");
-
-    error.status = 404;
-
-    console.error(`An error occured on route ${req.originalUrl} with message: ${error.message} and status: ${error.status}`);
-
-    next(error);
+    res.render('index', { projects });
 
 });
 
 
 
-// Tell our application we want to display an error page if an error occurs
+app.get ('/about', (req, res) => {
 
-app.use((error, req, res, next) => {
+    res.render('about', {projects});
 
-    res.locals.error = error;
+});
 
-    res.status(error.status || 500);
 
-    res.render('error');
+
+app.get('/projects', (req, res) => {
+
+     res.render('project', {projects});
+
+});
+
+
+
+app.get ('/projects/:id', (req, res) => {
+
+    const {id} = req.params;
+
+    if( isNaN(id) || id >= projects.length) {
+
+      return  res.redirect('/');
+
+    }
+
+    res.render('project', {id, projects});
 
 });
 
