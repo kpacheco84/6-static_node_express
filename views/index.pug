@@ -27,8 +27,8 @@ block content
     
         each project in projects
           .cell
-             a(href='/project/' + project.id)
-              img.thumbnail(src= project.image_urls[0])
-              h5 #{project_name}
+             a(href=`http://localhost:3000/project/${project.id}`)
+              img.thumbnail(src= `${project.image_urls}`)
+              h5 #{project.project_name}
 
 
