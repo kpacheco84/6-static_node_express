@@ -6,8 +6,8 @@
 "project_name": "Random Quote Generator",
 "description":"Have the screen loop through random qoutes array by clicking submit or after 5 seconds using a timeout funnction",
 "technologies":["HTML", "CSS", "JavaScript"],
-"live_link":"not known",
-"github_link":"not known",
+"live_link":"https://kpacheco84.github.io/1---RandomQouteGenerator/",
+"github_link":"https://github.com/kpacheco84/1---RandomQouteGenerator",
 "image_urls":["/static/images/1_RandomQuoteMain.png","/static/images/1_2.PNG","/static/images/1_3.PNG"]
     
         },
@@ -16,7 +16,7 @@
 "project_name": "List Pagination and Filtering",
 "description":"Dynamically list 10 students per page dependent on length of student list and filter according to name search",
  "technologies":["HTML", "CSS", "JavaScript"],
- "live_link":"not known",
+ "live_link":"https://kpacheco84.github.io/2-list_pagination_and_filtering-v1",
 "github_link":"https://github.com/kpacheco84/2-list_pagination_and_filtering-v1",
 "image_urls":["/static/images/2_ListPagandFilteringMain.png","/static/images/2_1.PNG","/static/images/2_2.PNG"]
  
@@ -24,10 +24,10 @@
 },
 {"id":2,
     "project_name": "Interactive Form",
-    "description":"Create a Form where a person can register for sessions at a conference and order a shirt all while making the Form elements very interactive and handle errors i a user friendly way",
+    "description":"Create a Form where a person can register for sessions at a conference and order a shirt all while making the Form elements very interactive and handle errors in a user friendly way",
      "technologies":["HTML", "CSS", "jquery"],
-     "live_link":"not known",
-    "github_link":"not known",
+     "live_link":"https://kpacheco84.github.io/3-Interactive-Form",
+    "github_link":"https://github.com/kpacheco84/3-Interactive-Form",
     "image_urls":["/static/images/3_InteractiveFormMain.png","/static/images/3_1.PNG","/static/images/3_2.PNG","/static/images/3_3.PNG"]
      },
      {
@@ -35,8 +35,8 @@
      "project_name": "OOP Game",
      "description":"Develop a Game using OOP, keep track of score and end game with an appropriate screen",
       "technologies":["HTML", "CSS", "jQuery","OOP"],
-      "live_link":"not known",
-     "github_link":"not known",
+      "live_link":"https://kpacheco84.github.io/4-OOPGame",
+     "github_link":"https://github.com/kpacheco84/4-OOPGame",
      "image_urls":["/static/images/4_OOPGameMain.png","/static/images/4_1.PNG","/static/images/4_2.PNG","/static/images/4_3.PNG","/static/images/4_4.PNG","/static/images/4_5.PNG"]
      },
 
@@ -44,8 +44,8 @@
         "project_name": "Public API Request",
         "description":"Request via FETCH API a json list of Random Employees with the requested filtering and display their information. Allow the user to click on an employees card and open a Module Window with further employee detail.",
          "technologies":["HTML", "CSS", "jQuery", "FetchAPI"],
-         "live_link":"not known",
-        "github_link":"",
+         "live_link":"https://kpacheco84.github.io/5-public_api_request-v1",
+        "github_link":"https://github.com/kpacheco84/5-public_api_request-v1",
         "image_urls":["/static/images/5_PublicAPIRequestMain.png","/static/images/5_1.PNG","/static/images/5_2.PNG"]
          }
 

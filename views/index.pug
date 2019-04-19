@@ -23,7 +23,7 @@ block content
     
         each project in projects
           .cell
-             a(href=`http://localhost:3000/project/${project.id}`)
+             a(href=`http://localhost:3000/project/${project.id}` target="_blank")
               img(src= `${project.image_urls[0]}`)
               h5 #{project.project_name}
 
