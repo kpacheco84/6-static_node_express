@@ -3,12 +3,12 @@
     "projects": [ 
     {
 "id":0,
-"project_name": "Random Qoute Generator",
+"project_name": "Random Quote Generator",
 "description":"Have the screen loop through random qoutes array by clicking submit or after 5 seconds using a timeout funnction",
 "technologies":["HTML", "CSS", "JavaScript"],
 "live_link":"not known",
 "github_link":"not known",
-"image_urls":["/static/images/1_RandomQuoteMain.jpg"]
+"image_urls":["/static/images/1_RandomQuoteMain.png","/static/images/1_2.PNG","/static/images/1_3.PNG"]
     
         },
     {
@@ -17,8 +17,8 @@
 "description":"Dynamically list 10 students per page dependent on length of student list and filter according to name search",
  "technologies":["HTML", "CSS", "JavaScript"],
  "live_link":"not known",
-"github_link":"not known",
-"image_urls":["/static/images/2_ListPagandFilteringMain.jpg"]
+"github_link":"https://github.com/kpacheco84/2-list_pagination_and_filtering-v1",
+"image_urls":["/static/images/2_ListPagandFilteringMain.png","/static/images/2_1.PNG","/static/images/2_2.PNG"]
  
        
 },
@@ -28,7 +28,7 @@
      "technologies":["HTML", "CSS", "jquery"],
      "live_link":"not known",
     "github_link":"not known",
-    "image_urls":["/static/images/3_InteractiveFormMain.jpg"]
+    "image_urls":["/static/images/3_InteractiveFormMain.png","/static/images/3_1.PNG","/static/images/3_2.PNG","/static/images/3_3.PNG"]
      },
      {
      "id":3,
@@ -37,7 +37,7 @@
       "technologies":["HTML", "CSS", "jQuery","OOP"],
       "live_link":"not known",
      "github_link":"not known",
-     "image_urls":["/static/images/4_OOPGameMain.jpg"]
+     "image_urls":["/static/images/4_OOPGameMain.png","/static/images/4_1.PNG","/static/images/4_2.PNG","/static/images/4_3.PNG","/static/images/4_4.PNG","/static/images/4_5.PNG"]
      },
 
      {"id":4,
@@ -45,8 +45,8 @@
         "description":"Request via FETCH API a json list of Random Employees with the requested filtering and display their information. Allow the user to click on an employees card and open a Module Window with further employee detail.",
          "technologies":["HTML", "CSS", "jQuery", "FetchAPI"],
          "live_link":"not known",
-        "github_link":"not known",
-        "image_urls":["/static/images/5_PublicAPIRequestMain.jpg"]
+        "github_link":"",
+        "image_urls":["/static/images/5_PublicAPIRequestMain.png","/static/images/5_1.PNG","/static/images/5_2.PNG"]
          }
 
     ]

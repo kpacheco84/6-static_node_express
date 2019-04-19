@@ -7,11 +7,23 @@ const data = require('./data.json');
 
 const app = express();
 
+const bodyParser = require('body-parser');
+
+const cookieParser = require('cookie-parser');
+
 const projects = data.projects;
 
 var port = process.env.PORT || 3000;
 
+// Init Parsing of Req Body & Cookies
 
+app.use(bodyParser.urlencoded({
+
+    extended: false
+
+}));
+
+app.use(cookieParser());
 
 
 
@@ -27,7 +39,7 @@ app.get ('/', (req, res) => {
 
     
 
-    res.render('index', { projects });
+res.render('index', { projects });
 
 });
 

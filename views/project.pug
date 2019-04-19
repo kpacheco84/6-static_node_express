@@ -1,7 +1,6 @@
 extends layout.pug
 
 
-
 block content 
 
   nav.grid-container.portfolio-breadcrumb
@@ -18,7 +17,7 @@ block content
 
         //- Use interploation to dynamically add the project title.
 
-        h1 #{projects.project_name}
+        h1 #{projects[id].project_name}
 
 
 
@@ -26,7 +25,7 @@ block content
 
         p.lead.text-light
 
-          | #{projects.description}
+          | #{projects[id].description}
 
 
 
@@ -38,17 +37,31 @@ block content
 
         //- Use an `each` iterator to replace the li tags below and interploation to dynamically add the technologies used in each project.
 
-       
+         
+        ul
+
+        each val in projects[id].technologies
+
+          li= val
+
+     
 
 
 
         //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
 
-        a.button.expanded(href=`${projects.live_link}`) Live Demo
+        a.button.expanded(href=`${projects[id].live_link}`) Live Demo
 
-        a.button.expanded(href=`${projects.git_hub}`) GitHub Repo
+        a.button.expanded(href=`${projects[id].git_hub}`) GitHub Repo
 
     
 
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see. 
 
+    
+
+    img.image(src=`${projects[id].image_urls[1]}`)
+
+    img.image(src=`${projects[id].image_urls[2]}`)
+
+    
