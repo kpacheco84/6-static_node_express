@@ -59,7 +59,7 @@ app.get('/project', (req, res) => {
 
 });
 
-
+// get and dynamically render project layout based on clicked project image in index page
 
 app.get ('/project/:id', (req, res) => {
 
