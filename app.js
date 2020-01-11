@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 
 const projects = data.projects;
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 
 // Init Parsing of Req Body & Cookies
 
@@ -75,9 +75,9 @@ app.get ('/project/:id', (req, res) => {
 
 });
 
-//listen on port 3000
+//listen on port 5000
 
-app.listen(3000, () => {
+app.listen(5000, () => {
 
     console.log(`The application is now running on localhost:3000!`);
 
